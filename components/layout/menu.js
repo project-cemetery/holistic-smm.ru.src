@@ -6,8 +6,10 @@ export default () =>
     <nav id="menu">
         <h2>Меню</h2>
         <ul>
-            {menu && menu.map(item =>
-                <Link href={item.path}><li><a>{item.title}</a></li></Link>
+            {menu.map(item =>
+                <li key={item.path}>
+                    <Link href={item.path}><a>{item.title}</a></Link>
+                </li>
             )}
         </ul>
     </nav>

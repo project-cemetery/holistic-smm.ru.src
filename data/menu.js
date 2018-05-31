@@ -1,3 +1,4 @@
 export default [
-    { path: '/' , title: 'Главная' },
+    { path: '/' ,   title: 'Главная' },
+    { path: '/ads', title: 'Размещение рекламы' },
 ]
