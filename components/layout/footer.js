@@ -1,5 +1,7 @@
 import ContactFrom from './form'
 
+import contacts from '../../data/contacts'
+
 export default () =>
     <footer id="footer">
         <div className="inner">
@@ -12,7 +14,13 @@ export default () =>
             <section>
                 <h2>Способы связи</h2>
                 <ul className="icons">
-                    <li><a href="#" className="icon style2 fa-envelope-o"><span className="label">Email</span></a></li>
+                    {contacts.map(contact =>
+                        <li key={contact.link}>
+                            <a href={contact.link} className={`icon style2 fa-${contact.icon}`}>
+                                <span className="label">{contact.title}</span>
+                            </a>
+                        </li>
+                    )}
                 </ul>
             </section>
 
