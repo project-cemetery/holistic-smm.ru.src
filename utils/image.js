@@ -1,1 +1,1 @@
-export default suffix => `/static/img/${suffix}.jpg`
+export default suffix => `/static/img/${suffix}`
