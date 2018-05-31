@@ -20,7 +20,7 @@ export default ({ title, description, keywords, children }) =>
             <Menu />
 
             <div id="main">
-				<div class="inner">
+				<div className="inner">
                     {children}
                 </div>
             </div>

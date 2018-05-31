@@ -21,7 +21,7 @@ export default () =>
 
         <section className="tiles">
             {channels.map((channel, i) =>
-                <article className={`style${i + 1}`}>
+                <article className={`style${i + 1}`} key={channel.link}>
                     <span className="image">
                         <img src={image(channel.image)} alt={channel.title} />
                     </span>
