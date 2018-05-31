@@ -1,0 +1,19 @@
+{
+  "name": "holistic-smm.ru.src",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:igorkamyshev/holistic-smm.ru.src.git",
+  "author": "Igor Kamyshev <garik.novel@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^6.0.3",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  }
+}
