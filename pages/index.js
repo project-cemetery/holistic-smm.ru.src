@@ -15,7 +15,7 @@ export default () =>
             </h1>
             <p>
                 Все наши каналы направлены на свободное распространение знаний. 
-                Содержать их позволяет <Link href="/ads"><a>размещение рекламы</a></Link> и <a href="https://www.patreon.com/holistic">сбор пожертвований</a>.
+                Содержать их позволяет <Link href="/ads"><a>размещение рекламы</a></Link> и <a href="https://www.patreon.com/holistic">поддержка патронов</a>.
             </p>
         </header>
 
