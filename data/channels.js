@@ -3,8 +3,15 @@ export default [
         title: 'Python Textbooks',
         description: 'Литература по Python',
         link: 'python_textbooks',
-        followers: '12k',
+        followers: '13,5k',
         image: 'python-textbooks.jpg',
+    },
+    {
+        title: 'Code for Your Life',
+        description: 'Авторский канал обычного разработчика',
+        link: 'code_for',
+        followers: '1,5k',
+        image: 'code-for.jpg',
     },
     {
         title: 'Frontend Textbooks',
