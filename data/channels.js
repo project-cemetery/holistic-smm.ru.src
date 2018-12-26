@@ -3,14 +3,14 @@ export default [
         title: 'Python Textbooks',
         description: 'Литература по Python',
         link: 'python_textbooks',
-        followers: '13,5k',
+        followers: '14k',
         image: 'python-textbooks.jpg',
     },
     {
-        title: 'Code for Your Life',
-        description: 'Авторский канал обычного разработчика',
+        title: 'kamyshev.code',
+        description: 'Архитектура, код, софт-скиллы и всё остальное',
         link: 'code_for',
-        followers: '1,5k',
+        followers: '2,5k',
         image: 'code-for.jpg',
     },
     {
