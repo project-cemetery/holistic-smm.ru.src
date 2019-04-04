@@ -1,19 +1,33 @@
 {
   "name": "holistic-smm.ru.src",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:igorkamyshev/holistic-smm.ru.src.git",
-  "author": "Igor Kamyshev <garik.novel@gmail.com>",
+  "author": "Igor Kamyshev <igor@kamyshev.me>",
   "license": "MIT",
-  "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build && next export",
-    "start": "next start"
+    "build": "rimraf .cache && rimraf dist && parcel build src/pages/index.pug && node postparcel.js",
+    "dev": "rimraf .cache && parcel src/pages/index.pug",
+    "s": "yarn soda",
+    "spell": "yaspeller ./src/data",
+    "ci": "yarn s lint && yarn spell"
   },
-  "dependencies": {
-    "next": "^8.0.3",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+  "devDependencies": {
+    "@solid-soda/scripts": "^1.3.0",
+    "autoprefixer": "^9.5.0",
+    "parcel-bundler": "^1.12.3",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-nesting": "^7.0.0",
+    "pug": "^2.0.3",
+    "rimraf": "^2.6.3",
+    "yaspeller": "^5.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn soda lint-staged && yarn spell",
+      "commit-msg": "yarn soda commitlint"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
