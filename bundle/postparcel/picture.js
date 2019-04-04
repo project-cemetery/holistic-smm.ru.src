@@ -11,20 +11,29 @@ postHtmlPlugin = tree => {
 
     parsedSrc.push(i.attrs.src)
 
+    const webpSrc = `${changeExt(i.attrs.src, 'webp', '@2x')} 2x, ${changeExt(
+      i.attrs.src,
+      'webp',
+    )} 1x`
+    const jpegSrc = `${changeExt(i.attrs.src, 'jpg', '@2x')} 2x, ${changeExt(
+      i.attrs.src,
+      'jpg',
+    )} 1x`
+
     return {
       tag: 'picture',
       content: [
         {
           tag: 'source',
           attrs: {
-            srcset: changeExt(i.attrs.src, 'webp'),
+            srcset: webpSrc,
             type: 'image/webp',
           },
         },
         {
           tag: 'source',
           attrs: {
-            srcset: i.attrs.src,
+            srcset: jpegSrc,
             type: 'image/jpeg',
           },
         },

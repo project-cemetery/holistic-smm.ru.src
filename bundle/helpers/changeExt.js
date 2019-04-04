@@ -1,2 +1,2 @@
-module.exports.changeExt = (filePath, newExt) =>
-  filePath.replace(/\.(\w+)$/gi, `.${newExt}`)
+module.exports.changeExt = (filePath, newExt, additionalName = '') =>
+  filePath.replace(/\.(\w+)$/gi, `${additionalName}.${newExt}`)
