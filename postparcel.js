@@ -9,9 +9,12 @@ const stat = promisify(fs.stat)
 
 const { plugins } = require('./postparcel.config')
 
-const on = (fileExtension, content) => async (targetExtension, execute) => {
+const on = (fileExtension, content, filePath) => async (
+  targetExtension,
+  execute,
+) => {
   if (fileExtension === targetExtension) {
-    return execute(content)
+    return execute(content, filePath)
   }
 
   return content
@@ -34,11 +37,11 @@ const postparcel = async () => {
       }
 
       const extension = file.split('.').reverse()[0]
-      const originalContent = (await readFile(filePath)).toString()
+      const originalContent = await readFile(filePath)
       let newContent = originalContent
 
       for (const plugin of plugins) {
-        newContent = await plugin(on(extension, newContent))
+        newContent = await plugin(on(extension, newContent, filePath))
       }
 
       if (originalContent !== newContent) {

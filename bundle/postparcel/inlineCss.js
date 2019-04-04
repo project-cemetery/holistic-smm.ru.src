@@ -40,6 +40,6 @@ const postHtmlPlugin = (tree, cb) => {
 module.exports.inlineCss = on =>
   on('html', async file =>
     posthtml([postHtmlPlugin])
-      .process(file)
+      .process(file.toString())
       .then(result => result.html),
   )
