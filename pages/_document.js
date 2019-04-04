@@ -4,13 +4,6 @@ import flush from 'styled-jsx/server'
 
 
 export default class HolisticDocument extends Document {
-
-    static getInitialProps({ renderPage }) {
-        const { html, head, errorHtml, chunks } = renderPage()
-        const styles = flush()
-        return { html, head, errorHtml, chunks, styles }
-    }
-
     render() {
         return (
             <html>
@@ -43,17 +36,7 @@ export default class HolisticDocument extends Document {
 		            <link rel="stylesheet" href="/static/css/main.css" />
                 </Head>
                 <body>
-            
                     <Main />
-
-                    <div>
-                        <script src="/static/js/jquery.min.js"></script>
-                        <script src="/static/js/skel.min.js"></script>
-                        <script src="/static/js/util.js"></script>
-                        <script src="/static/js/main.js"></script>
-                    </div>
-
-                    <NextScript />
                 </body>
             </html>
         )

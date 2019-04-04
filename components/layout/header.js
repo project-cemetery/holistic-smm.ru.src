@@ -15,11 +15,5 @@ export default () =>
                 </a>
             </Link>
 
-            <nav>
-                <ul>
-                    <li><a href="#menu">Меню</a></li>
-                </ul>
-            </nav>
-
         </div>
     </header>

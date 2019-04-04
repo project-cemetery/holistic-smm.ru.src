@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import Layout from '../components/layout'
 
 import channels from '../data/channels'
@@ -14,8 +12,8 @@ export default () =>
                 Мы просто делаем хороший контент. 
             </h1>
             <p>
-                Все наши каналы направлены на свободное распространение знаний. 
-                Содержать их позволяет <Link href="/ads"><a>размещение рекламы</a></Link> и <a href="https://www.patreon.com/holistic">поддержка патронов</a>.
+                Наши каналы направлены на свободное распространение знаний. 
+                Содержать их позволяет <a href="https://t.me/mashagoroshik">размещение рекламы</a> и <a href="https://www.patreon.com/holistic">поддержка патронов</a>.
             </p>
         </header>
 

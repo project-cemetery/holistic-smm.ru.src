@@ -1,7 +1,6 @@
 import Head from 'next/head'
 
 import Header from './header'
-import Menu from './menu'
 import Footer from './footer'
 
 
@@ -17,7 +16,6 @@ export default ({ title, description, keywords, children }) =>
         <div id="wrapper">
 
             <Header />
-            <Menu />
 
             <div id="main">
 				<div className="inner">
