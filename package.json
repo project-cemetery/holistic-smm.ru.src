@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@solid-soda/scripts": "^1.11.13",
-    "autoprefixer": "^9.6.0",
+    "autoprefixer": "^9.6.1",
     "parcel-bundler": "^1.12.3",
     "pug": "^2.0.4",
     "rimraf": "^2.6.3",
