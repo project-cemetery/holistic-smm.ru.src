@@ -1,5 +1,5 @@
-module.exports.extrarnalLinks = tree =>
-  tree.match({ tag: 'a' }, i => ({
+module.exports.extrarnalLinks = (tree) =>
+  tree.match({ tag: 'a' }, (i) => ({
     tag: 'a',
     content: i.content,
     attrs: {
@@ -7,4 +7,4 @@ module.exports.extrarnalLinks = tree =>
       target: '_blank',
       rel: 'noopener',
     },
-  }))
+  }));
