@@ -8,7 +8,6 @@
     "build": "rimraf .cache && rimraf dist && parcel build src/pages/index.pug && node postparcel.js",
     "dev": "rimraf .cache && parcel src/pages/index.pug",
     "spell": "yaspeller ./src/data",
-    "ci": "yarn lint:code && yarn lint:styles && yarn spell",
     "pretty": "prettier --write .",
     "commit": "git-cz",
     "lint:code": "eslint \"./**/*.{js,jsx}\"",
