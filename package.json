@@ -34,7 +34,7 @@
     "pug": "^3.0.0",
     "rimraf": "^3.0.2",
     "sharp": "^0.25.3",
-    "stylelint": "^13.5.0",
+    "stylelint": "^13.6.0",
     "stylelint-config-recess-order": "^2.0.4",
     "stylelint-config-recommended": "^3.0.0",
     "yaspeller": "^7.0.0"
